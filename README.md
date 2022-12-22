@@ -13,15 +13,14 @@ Structure of project
 Running the program:
 - simple run in CLI with dotnet test:
 
-![image](https://user-images.githubusercontent.com/73746353/207141287-b2e9e786-ac87-407a-be9c-e9dd7ecc415c.png)
+![image](https://github.com/DDarel/Vladyslav_Shevchuk_Selenium/blob/main/Screenshots/test.PNG?raw=true)
 
 - For reporting we use https://docs.specflow.org/projects/specflow-livingdoc/en/latest/LivingDocGenerator/Generating-Documentation.html
 
 Running with following command:
-![image](https://user-images.githubusercontent.com/73746353/207140284-80fc5550-d5eb-4487-92ec-1438f06afd36.png)
+![image](https://github.com/DDarel/Vladyslav_Shevchuk_Selenium/blob/main/Screenshots/repo.PNG?raw=true)
 
 As we can see, it gives path for result.
 Open it:
 
-![image](https://user-images.githubusercontent.com/73746353/207140474-f5ef75f7-1f73-47ec-9a7c-fafecd788825.png)
-
+![image](https://github.com/DDarel/Vladyslav_Shevchuk_Selenium/blob/main/Screenshots/html.PNG?raw=true)
