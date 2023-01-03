@@ -8,22 +8,20 @@ using TechTalk.SpecFlow;
 
 namespace CucumberTest.Pages
 {
-    internal class LogInPage
+    internal class LogInPage : AbstractPage
     {
-        public IWebDriver webDriver { get; }
         public IWebElement lnkLogin;
         public IWebElement txtUserName;
         public IWebElement txtPassword;
-        public LogInPage(IWebDriver webDriver1)
+
+        public LogInPage(IWebDriver webDriver) : base(webDriver)
         {
-            webDriver = webDriver1;
         }
 
         private void Init() {
-            Thread.Sleep(1500);
-            lnkLogin = webDriver.FindElement(By.XPath("//button"));
-            txtUserName = webDriver.FindElement(By.XPath("//input[@name='username']"));
-            txtPassword = webDriver.FindElement(By.XPath("//input[@name='password']"));
+            lnkLogin = WaitToFindElement(By.XPath("//button"));
+            txtUserName = WaitToFindElement(By.XPath("//input[@name='username']"));
+            txtPassword = WaitToFindElement(By.XPath("//input[@name='password']"));
         }
       
         public void Login(string userName, string password)

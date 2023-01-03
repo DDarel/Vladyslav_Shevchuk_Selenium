@@ -107,16 +107,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "Admin",
                             "admin123"});
 #line 4
-testRunner.Given("User logged in with data", ((string)(null)), table1, "Given ");
-#line hidden
-#line 7
-testRunner.When("User click on Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 8
-testRunner.And("User click on Job Titles", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 9
-testRunner.And("User click on Add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.Given("I have logged into application", ((string)(null)), table1, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "JobTitle",
@@ -126,17 +117,17 @@ testRunner.And("User click on Add", ((string)(null)), ((TechTalk.SpecFlow.Table)
                             "Student",
                             "Bad job anyway",
                             "Intresting note"});
+#line 7
+testRunner.When("I add new job title", ((string)(null)), table2, "When ");
+#line hidden
 #line 10
-testRunner.And("User insert data", ((string)(null)), table2, "And ");
+testRunner.Then("Job title is added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 13
-testRunner.And("User click on Save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
+testRunner.When("I remove job title", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 14
-testRunner.Then("User delete Student", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 15
-testRunner.And("User click Yes, Delete", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 12
+testRunner.Then("job title is removed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
