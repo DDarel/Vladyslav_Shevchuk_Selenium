@@ -7,7 +7,7 @@ It does:
 3. Deletes created Student job
 
 Structure of project
-- Features/Task.feature - testing scenario
+- Features/AddNewJob.feature - testing scenario
 - bin/Debug/net6.0/CucumberTest.dll - executable file
 
 Running the program:
